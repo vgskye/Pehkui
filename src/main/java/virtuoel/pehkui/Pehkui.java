@@ -1,8 +1,8 @@
 package virtuoel.pehkui;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.ApiStatus;
-import org.spongepowered.asm.logging.ILogger;
-import org.spongepowered.asm.service.MixinService;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
@@ -25,7 +25,7 @@ public class Pehkui implements ModInitializer
 {
 	public static final String MOD_ID = "pehkui";
 	
-	public static final ILogger LOGGER = MixinService.getService().getLogger(MOD_ID);
+	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
 	
 	public Pehkui()
 	{
